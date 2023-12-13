@@ -37,7 +37,8 @@ const VideoCard = (props) => {
       <div className="bottom-controls">
         <div className="footer-left">
           {/* The left part of the container */}
-          <FooterLeft username={username} description={description} song={song} />
+          <FooterLeft username={username} description={description}/>
+          {/* <FooterLeft username={username} description={description} song={song} /> */}
         </div>
         <div className="footer-right">
           {/* The right part of the container */}

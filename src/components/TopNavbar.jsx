@@ -1,13 +1,18 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTv, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faHouse } from '@fortawesome/free-solid-svg-icons';
 
 const TopNavbar = () => {
+  const redirectToHomepage = () => {
+    // Replace 'vivamuenchen.de' with the actual URL you want to redirect to
+    window.location.href = 'https://vivamuenchen.de';
+  };
+
   return (
     <div className="top-navbar">
-      <FontAwesomeIcon icon={faTv} className='icon'/>
-      <h2>Following  |   <span>For You</span></h2>
-      <FontAwesomeIcon icon={faSearch} className='icon'/>
+      <h2 onClick={redirectToHomepage}>
+        Zurück zur Homepage  <FontAwesomeIcon icon={faHouse} className='icon'/>
+      </h2>
     </div>
   );
 };
